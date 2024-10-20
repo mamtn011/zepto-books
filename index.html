@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- style.css  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <title>Zepto Books</title>
+  </head>
+  <body>
+    <!-- ========== START HEADER ========== -->
+    <header class="section section-header">
+      <div class="container" id="menu-container">
+        <div class="nav-brand">
+          <a href="./index.html">
+            <img src="./assets/images/logo_zb.png" alt="Website Logo" />
+          </a>
+        </div>
+        <nav class="nav-menu">
+          <ul class="navbar-lists">
+            <li>
+              <a href="./index.html">Home</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+            <li>
+              <a href="./wishlist.html">Wishlist</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="mobile-menu--btns">
+          <ion-icon
+            name="menu-outline"
+            class="mobile-menu--icon menu"
+          ></ion-icon>
+          <ion-icon
+            name="close-outline"
+            class="mobile-menu--icon close"
+          ></ion-icon>
+        </div>
+      </div>
+    </header>
+    <!-- ========== END HEADER ========== -->
+
+    <!-- ========== START FILTER SECTION ========== -->
+    <div class="section section-filter">
+      <div class="container grid grid-two--cols">
+        <div class="filter-title">
+          <p>Find books by title</p>
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Write books title"
+          />
+        </div>
+        <div class="filter-genre">
+          <p>Find books by genre</p>
+          <select name="genre" id="genre">
+            <option value="v1">v1</option>
+            <option value="v1">v1</option>
+            <option value="v1">v1</option>
+            <option value="v1">v1</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <!-- ========== END FILTER SECTION ========== -->
+
+    <!-- ========== START BOOK LIST SECTION ========== -->
+    <div class="section section-books">
+      <div class="container grid grid-four--cols" id="book-list">
+        <!-- books div place here  -->
+      </div>
+    </div>
+    <!-- ========== END BOOK LIST SECTION ========== -->
+    <!-- ========== START PAGINATION SECTION ========== -->
+    <div class="section section-pagination">
+      <div class="container">
+        <div class="pagination">
+          <button><ion-icon name="arrow-back-outline"></ion-icon> Prev</button>
+          <button>
+            Next <ion-icon name="arrow-forward-outline"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- ========== END PAGINATION SECTION ========== -->
+    <!-- ========== START FOOTER SECTION ========== -->
+    <div class="section section-footer">
+      <div class="container">
+        <p>Zepto Books &copy;2024, All Rights Reserved.</p>
+      </div>
+    </div>
+    <!-- ========== END FOOTER SECTION ========== -->
+
+    <!-- ========== START JS ========== -->
+    <!-- ionicons icon cdn-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- main.js  -->
+    <script src="./assets/js/main.js" type="module"></script>
+    <!-- ========== END JS ========== -->
+  </body>
+</html>
