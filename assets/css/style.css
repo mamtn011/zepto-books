@@ -1,0 +1,93 @@
+/* imports  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+/***** Start Global CSS *****/
+/* base rule  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Poppins", sans-serif;
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+p {
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+p,
+a,
+label,
+li {
+  color: var(--para);
+  font-size: 1.7rem;
+}
+img {
+  display: inline-block;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 1.4rem 1.8rem;
+  font-size: 1.7rem;
+}
+/* theme  */
+:root {
+  --white-color: #fff;
+  --black-color: #000;
+  --para: #777777;
+  --para-tint: #e4e4e4;
+}
+
+/* layout  */
+.section {
+  width: 100%;
+}
+.container {
+  max-width: 128rem;
+  margin: 0 auto;
+  padding: 8rem 6.4rem;
+}
+.flex {
+  display: flex;
+}
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+.grid {
+  display: grid;
+}
+.grid-two--cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-four--cols {
+  grid-template-columns: repeat(4, 1fr);
+}
